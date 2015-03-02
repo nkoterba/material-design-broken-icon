@@ -1,0 +1,14 @@
+{
+  "name": "material-icon-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "./node_modules/.bin/http-server ."
+  },
+  "author": "Nathan Koterba <nathan.koterba@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.7.5"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-strict-di>
+<head>
+
+		<!-- Angulars Material CSS now available via Google CDN; version 0.8.1 used here -->
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.1/angular-material.min.css">
+
+		<!-- Angular Material Dependencies -->
+
+		<!--<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>-->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-aria.min.js"></script>
+
+
+		<!-- Angular Material Javascript now available via Google CDN; version 0.8.1 used here -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.8.1/angular-material.min.js"></script>
+
+</head>
+<body layout-fill layout style="background: black">
+
+
+<md-icon md-svg-icon="core:alarm-off"
+         style="color: yellow; width: 128px; height: 128px"></md-icon>
+
+<md-icon md-svg-icon="core:alarm-on"
+         style="color: white; width:24px; height: 24px"></md-icon>
+
+<md-icon md-svg-icon="core:alarm"
+         style="color: green; width: 64px; height: 64px"></md-icon>
+
+<script>
+		angular.module('app', [
+				'ngMaterial'
+		])
+				.config(['$mdIconProvider', function ($mdIconProvider) {
+						$mdIconProvider
+								.iconSet('core', 'core-icons.svg', 24)
+				}]);
+</script>
+
+</body>
+</html>
